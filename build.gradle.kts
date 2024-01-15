@@ -101,6 +101,8 @@ tasks.withType(Jar::class) {
         this["TweakClass"] = "org.spongepowered.asm.launch.MixinTweaker"
         this["MixinConfigs"] = "mixins.$modid.json"
     }
+
+    exclude("LICENSE.txt") //remove the spongepowered license
 }
 
 tasks.processResources {
